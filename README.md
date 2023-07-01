@@ -1,6 +1,7 @@
 ### clodflare Docsのレイアウトざっくり再現をやってみた
-https://saruwakakun.com/html-css/basic/display
-https://zenn.dev/junki555/articles/45614f64695b77a2ae78
-https://github.com/cloudflare/cloudflare-docs
 
+##### 詳細
+このリポジトリに関する実装の詳細は以下記事に記載しています。
+
+[cloudflare docsのレスポンシブデザイン、Next.jsでざっくり再現に挑戦](https://qiita.com/eno49conan/items/d684ef6a0fb6791ece42)
 
