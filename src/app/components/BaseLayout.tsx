@@ -2,14 +2,14 @@
 
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import Toggle from '../components/Toggle';
-import BreadThumb from './BreadThumb';
 import CloudflareDocsSvgLabel from './CloudflareDocsSvgLabel';
 import CloudflareQueueSvgLabel from './CloudflareQueueSvgLabel';
-
+import BreadThumb, { LabelLink } from './BreadThumb';
+import Contents from './ToggleableContent';
 interface IProps {
     pathname: string
     contents: React.ReactNode
+    pathHierarchyList: LabelLink[]
 }
 
 export default function BaseLayout(props: IProps) {
@@ -62,8 +62,8 @@ export default function BaseLayout(props: IProps) {
                 style={{ width: showSidebar ? '75%' : '0' }}
             >
 
-                <div className="md:hidden">
-                    <Toggle pathname={props.pathname} />
+                <div className="md:hidden mt-2 ml-2">
+                    <Contents />
                 </div>
             </div>
         )
@@ -76,7 +76,9 @@ export default function BaseLayout(props: IProps) {
                 <CloudflareDocsSvgLabel />
                 <div className="border-t border-gray-300"></div>
                 <CloudflareQueueSvgLabel />
-                <Toggle pathname={props.pathname} />
+                <div className="mt-2 ml-2">
+                    <Contents />
+                </div>
             </div>
         )
     }
@@ -134,7 +136,7 @@ export default function BaseLayout(props: IProps) {
                     </div>
                 </div>
                 {/* パンくずリスト */}
-                <BreadThumb pathname={props.pathname} />
+                <BreadThumb lists={props.pathHierarchyList} />
                 {/* 実際のコンテンツ */}
                 {props.contents}
             </div>)

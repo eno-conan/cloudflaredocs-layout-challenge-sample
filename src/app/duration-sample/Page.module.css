@@ -1,0 +1,36 @@
+@keyframes text-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.textAnimation {
+    animation-duration: 0.5s;
+    /* アニメーションの時間 */
+    animation-fill-mode: forwards;
+    /* 最後の状態を保持 */
+}
+
+.text-animation p {
+    animation-name: text-fade-in;
+    /* 表示時のアニメーション */
+}
+
+.text-animation:not(.text-animation-entering) p {
+    animation-name: text-fade-out;
+    /* 非表示時のアニメーション */
+}

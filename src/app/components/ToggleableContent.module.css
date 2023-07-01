@@ -1,0 +1,12 @@
+/* インデント調整のためのクラス */
+.indentLevel1 {
+    margin-left: 10px;
+}
+
+.indentLevel2 {
+    margin-left: 30px;
+}
+
+.indentLevel3 {
+    margin-left: 50px;
+}

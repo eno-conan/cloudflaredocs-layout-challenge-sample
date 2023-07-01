@@ -1,16 +1,6 @@
-# cloudflaredocs-layout-challenge-sample
+### clodflare Docsのレイアウトざっくり再現をやってみた
+https://saruwakakun.com/html-css/basic/display
+https://zenn.dev/junki555/articles/45614f64695b77a2ae78
+https://github.com/cloudflare/cloudflare-docs
 
-### clodflare Docsのレイアウト実装
-以下サイトのレイアウトをざっくりですが再現してみました。
 
-https://developers.cloudflare.com/queues/get-started/
-
-### 使用技術
-- Nextjs(v13)
-- tailwindcss
-
-### ローカルで動かしたい場合
-```
-npm install
-npm run dev
-```
